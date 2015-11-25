@@ -21,10 +21,17 @@ ex:
 
 
 # Build
+```
 git clone git@github.com:auronc/gentoo-xfce-vnc-desktop.git
-
 docker build --rm -t auronc/gentoo-xfce-vnc-desktop gentoo-xfce-vnc-desktop
-
+```
 
 # Problem
+```
+1. run docker image.
+2. check ip.
+3. run vnc server.
+4. run vnc client.
+5. problem: only gray screen, but no xfce desktop.
+```
 ![problem](http://i.imgur.com/CVu8Jr0.jpg)
