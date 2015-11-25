@@ -7,7 +7,8 @@ Run gentoo-xfce on docker via VNC.
 # Build
 ```
 git clone git@github.com:auronc/gentoo-xfce-vnc-desktop.git
-docker build --rm -t auronc/gentoo-xfce-vnc-desktop gentoo-xfce-vnc-desktop
+cd gentoo-xfce-vnc-desktop
+docker build -t="mygentoo:v1" .
 ```
 
 
