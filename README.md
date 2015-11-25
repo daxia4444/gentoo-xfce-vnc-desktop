@@ -1,5 +1,13 @@
 # gentoo-xfce-vnc-desktop
 Run gentoo-xfce on docker via VNC.
+[Docker hub](https://hub.docker.com/r/auronc/gentoo-xfce-vnc-desktop/)
+
+
+# Build
+```
+git clone git@github.com:auronc/gentoo-xfce-vnc-desktop.git
+docker build --rm -t auronc/gentoo-xfce-vnc-desktop gentoo-xfce-vnc-desktop
+```
 
 
 # Usage
@@ -11,7 +19,6 @@ vncpasswd
 vncserver
 ```
 
-
 // vnc client side  
 ```
 vncviewer <ip>:<port>
@@ -19,12 +26,6 @@ ex:
   vncviewer 172.17.0.5:5901
 ```
 
-
-# Build
-```
-git clone git@github.com:auronc/gentoo-xfce-vnc-desktop.git
-docker build --rm -t auronc/gentoo-xfce-vnc-desktop gentoo-xfce-vnc-desktop
-```
 
 # Problem
 ```
@@ -34,4 +35,5 @@ docker build --rm -t auronc/gentoo-xfce-vnc-desktop gentoo-xfce-vnc-desktop
 4. run vnc client.
 5. problem: only gray screen, but no xfce desktop.
 ```
+If you know where the problem is, please help me. ;)
 ![problem](http://i.imgur.com/CVu8Jr0.jpg)
