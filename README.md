@@ -14,6 +14,7 @@ vncpasswd
 vncserver
 
 
+
 // vnc client side  
 vncviewer <ip>:<port>
 
