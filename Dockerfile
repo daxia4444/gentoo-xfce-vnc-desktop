@@ -25,7 +25,6 @@ RUN emerge --update --newuse net-misc/tightvnc
 
 # copy xfce setting
 RUN mkdir /root/.vnc
-RUN touch /root/.vnc/xstartup
 COPY xstartup /root/.vnc/
 
 # export port
