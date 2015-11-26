@@ -22,7 +22,11 @@ RUN source /etc/profile
 # install vnc server
 ENV USE server
 RUN emerge --update --newuse net-misc/tightvnc
-# set password by using the command 'vncpasswd'
+
+# copy xfce setting
+RUN mkdir /root/.vnc
+RUN touch /root/.vnc/xstartup
+COPY xstartup /root/.vnc/
 
 # export port
 EXPOSE 5900
