@@ -20,9 +20,11 @@ ifconfig | grep -w inet  # check <IP>
 #vncpasswd
 vncserver
 ```
-When run 'vncserver', you'll see like:
+```
+When run 'vncserver', you'll see it below.
+Watch the blue circle and let's call it <N>.
+```
 ![vncserver](http://i.imgur.com/vLDCjlZ.jpg)
-Watch the blue circle and let's call it <N>
 
 
 // vnc client side  
